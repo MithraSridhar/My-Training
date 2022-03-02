@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+              							<!-- Include starts with "S" -->
+ <!--  <groups> 
+	    <run>
+	    <include name="s.*" /> 
+	    </run>
+	</groups> -->
+	 <groups> 
+	    <run>
+	    <include name="sanity" /> 
+		<exclude name="sanity" />
+	    </run>
+	</groups>
+    <classes>
+      <class name="session8_wf.TestNGIncExc"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+  							<!-- Include -->
+<!--   <groups> 
+	    <run> 
+		<include name="smoke" />
+	    </run>
+	</groups>
+    <classes>
+      <class name="session8_wf.TestNGIncExc"/>
+    </classes> -->
+    
+     							<!-- Exclude -->
+ <!--  <groups> 
+	    <run> 
+		<exclude name="smoke" />
+	    </run>
+	</groups>
+    <classes>
+      <class name="session8_wf.TestNGIncExc"/>
+    </classes> -->
+    
+    
+        							<!-- Include & Exclude -->
+<!--   <groups> 
+	    <run>
+	    <include name="smoke" /> 
+		<exclude name="sanity" />
+	    </run>
+	</groups>
+    <classes>
+      <class name="session8_wf.TestNGIncExc"/>
+    </classes> -->
+    
+           							<!-- Include & Exclude same group -->
+<!--   <groups> 
+	    <run>
+	    <include name="sanity" /> 
+	    <exclude name="smoke" />	
+	    <include name="smoke" /> 
+	    </run>
+	</groups>
+    <classes>
+      <class name="session8_wf.TestNGIncExc"/>
+    </classes> -->
+    
+              							<!-- Include starts with "S" -->
+ <!--  <groups> 
+	    <run>
+	    <include name="s.*" /> 
+	    </run>
+	</groups>
+    <classes>
+      <class name="session8_wf.TestNGIncExc"/>
+    </classes> -->
+
